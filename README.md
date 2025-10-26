@@ -67,5 +67,22 @@ If the intent requires extra info (e.g., order ID), the bot dynamically asks for
 
 ---
 
+#### 🧭 1️⃣ Project Folder Structure
+```
+Customer-Service Chatbot/
+├── app.py                          # Main Flask application with routes and chatbot logic
+├── simulated_backend.py            # Simulated backend actions for order operations
+├── slot_extraction.py              # Module for extracting order IDs from user messages
+├── dataset/                        # Directory containing training data
+│   └── Bitext_Sample_Customer_Support_Training_Dataset_27K_responses-v11.csv  # Training dataset
+├── json/                           # Directory for JSON configuration files
+│   └── intents_responses.json      # JSON file containing intent-response mappings
+├── model/                          # Directory for machine learning models
+│   ├── intent_model.pkl            # Trained machine learning model for intent classification
+│   └── Customer-Service Intent classifer.ipynb  # Jupyter notebook for model training
+├── templates/                      # HTML templates directory
+│   ├── index.html                  # Home page with project information and chatbot access
+│   └── chatbot.html                # Chatbot interface with conversation UI
+```
 
 
