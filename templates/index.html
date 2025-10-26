@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Service Chatbot - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#c6358cff",
+              secondary: "#ecececff",
+              accent: "#F59E0B",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c6358cff;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a028cc;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-4"
+  >
+    <div
+      class="w-full max-w-5xl bg-white rounded-2xl shadow-2xl overflow-hidden"
+    >
+      <!-- Header -->
+      <div class="bg-gradient-to-r from-primary to-blue-400 text-white p-5">
+        <div class="flex items-center justify-center space-x-4">
+          <div class="w-12 h-12 bg-opacity-20 flex items-center justify-center">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2593/2593635.png"
+              alt="AI Avatar"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <h1 class="text-2xl font-bold">Welcome to AI Customer Support</h1>
+            <p class="text-blue-100">Prototype Chatbot with Static Responses</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="p-8 text-center">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4">
+          How Can We Help You?
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Our AI-powered chatbot assists with various
+          <strong>customer service needs</strong> listed below. It’s available
+          24/7 to help you explore how intent-based chatbots work.
+        </p>
+
+        <!-- Supported Intents -->
+        <div
+          class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8 text-left"
+        >
+          <h3 class="text-lg font-semibold text-blue-800 mb-3">
+            Supported Query Intents:
+          </h3>
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 gap-2 text-gray-700 text-sm"
+          >
+            <span>• cancel_order</span>
+            <span>• change_order</span>
+            <span>• change_shipping_address</span>
+            <span>• check_cancellation_fee</span>
+            <span>• check_invoice</span>
+            <span>• check_payment_methods</span>
+            <span>• check_refund_policy</span>
+            <span>• complaint</span>
+            <span>• contact_customer_service</span>
+            <span>• contact_human_agent</span>
+            <span>• create_account</span>
+            <span>• delete_account</span>
+            <span>• delivery_options</span>
+            <span>• delivery_period</span>
+            <span>• edit_account</span>
+            <span>• get_invoice</span>
+            <span>• get_refund</span>
+            <span>• newsletter_subscription</span>
+            <span>• payment_issue</span>
+            <span>• place_order</span>
+            <span>• recover_password</span>
+            <span>• registration_problems</span>
+            <span>• review</span>
+            <span>• set_up_shipping_address</span>
+            <span>• switch_account</span>
+            <span>• track_order</span>
+            <span>• track_refund</span>
+          </div>
+        </div>
+
+        <!-- Note Section -->
+        <div
+          class="bg-yellow-50 border border-yellow-300 text-yellow-800 rounded-lg p-4 mb-8 text-left"
+        >
+          <h3 class="font-semibold mb-2">Important Note:</h3>
+          <p class="text-sm leading-relaxed">
+            This chatbot operates using a <strong>static intent model</strong>.
+            It utilizes <code><strong>intent_model.pkl</strong></code> to
+            identify your query type and fetches a predefined response from
+            <code><strong>intents_response.json</strong></code
+            >.
+          </p>
+          <p class="text-sm mt-2 leading-relaxed">
+            As this is a <strong>prototype</strong>,
+            <strong
+              >The chatbot give accurate first predefined response only for the
+              supported intents above, other replies are not defined for that
+              particular intent</strong
+            >. Questions outside these topics may result in
+            <strong>incorrect or irrelevant replies</strong>.
+          </p>
+        </div>
+
+        <a
+          href="/chatbot"
+          class="inline-block bg-primary hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200 mb-8"
+        >
+          Start Chat with AI Assistant
+        </a>
+
+        <!-- Feature Boxes -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Box 1: 24/7 Support -->
+          <div class="bg-white rounded-lg p-6 shadow-md text-center">
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/1828/1828640.png"
+                alt="24/7 Support Icon"
+                class="w-8 h-8"
+              />
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              24/7 Availability
+            </h3>
+            <p class="text-gray-600">
+              Get instant, automated assistance at any time of the day.
+            </p>
+          </div>
+
+          <!-- Box 2: Static AI Model -->
+          <div class="bg-white rounded-lg p-6 shadow-md text-center">
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/2593/2593635.png"
+                alt="AI Icon"
+                class="w-8 h-8"
+              />
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Static AI Model
+            </h3>
+            <p class="text-gray-600">
+              The chatbot identifies your intent and responds using predefined
+              answers from the trained dataset.
+            </p>
+          </div>
+
+          <!-- Box 3: Prototype Preview -->
+          <div class="bg-white rounded-lg p-6 shadow-md text-center">
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/190/190411.png"
+                alt="Prototype Icon"
+                class="w-8 h-8"
+              />
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Prototype Demonstration
+            </h3>
+            <p class="text-gray-600">
+              Explore how intent-based customer support works with limited,
+              static responses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
