@@ -3,7 +3,7 @@ AI-powered customer service chatbot built with Flask and NLP (TF-IDF + Logistic 
 ![Model Results](assets/index.png)
 ![Model Results](assets/chatbot.png)
 
-## 🧠 AI Customer Service Chatbot — Intent Classification + Flask Web App
+## 🧠 AI Customer Service Chatbot ( Intent Classification + Flask Web App)
 
 ### 🎯 Major Goal
 Build an **end-to-end AI-powered chatbot** that can automatically understand customer queries (intents) such as: Cancel Order, Track Refund, Payment Issue etc, and respond intelligently using a trained **NLP + ML model**.
