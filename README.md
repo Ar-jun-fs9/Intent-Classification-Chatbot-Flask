@@ -1,5 +1,17 @@
+<div align="center">
+  
 ## Intent-Classification-Chatbot-Flask
-AI-powered customer service chatbot built with Flask and NLP (TF-IDF + Logistic Regression). Detects user intents like order cancellation, refunds and payment issues etc with 99%+ accuracy.
+**An AI-powered customer service chatbot built with Flask and NLP (TF-IDF + Logistic Regression) — capable of detecting user intents like order cancellation, refunds, payment issues, and more with 99%+ accuracy.**
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Flask](https://img.shields.io/badge/Flask-Web%20Framework-green.svg)](https://flask.palletsprojects.com)
+[![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange.svg)](https://scikit-learn.org/stable/)
+[![Pandas](https://img.shields.io/badge/Data-Pandas-blueviolet.svg)](https://pandas.pydata.org)
+[![NLTK](https://img.shields.io/badge/NLP-NLTK-lightgrey.svg)](https://www.nltk.org)
+
+_Built for fast, accurate, and automated responses to common customer queries — trained on real customer support datasets._ 
+
+</div>
 
 ![Model Results](assets/index.png)
 ![Model Results](assets/chatbot.png)
@@ -62,19 +74,19 @@ If the intent requires extra info (e.g., order ID), the bot dynamically asks for
 ### 📂 Project Folder Structuree
 ```
 Customer-Service Chatbot/
-├── app.py                          # Main Flask application with routes and chatbot logic
-├── simulated_backend.py            # Simulated backend actions for order operations
-├── slot_extraction.py              # Module for extracting order IDs from user messages
-├── dataset/                        # Directory containing training data
-│   └── Bitext_Sample_Customer_Support_Training_Dataset_27K_responses-v11.csv  # Training dataset
-├── json/                           # Directory for JSON configuration files
-│   └── intents_responses.json      # JSON file containing intent-response mappings
-├── model/                          # Directory for machine learning models
-│   ├── intent_model.pkl            # Trained machine learning model for intent classification
-│   └── Customer-Service Intent classifer.ipynb  # Jupyter notebook for model training
-├── templates/                      # HTML templates directory
-│   ├── index.html                  # Home page with project information and chatbot access
-│   └── chatbot.html                # Chatbot interface with conversation UI
+├── 📄 app.py                          # Main Flask application with routes and chatbot logic
+├── 📄 simulated_backend.py            # Simulated backend actions for order operations
+├── 📄 slot_extraction.py              # Module for extracting order IDs from user messages
+├── 📁 dataset/                        # Directory containing training data
+│   └── 📄 Bitext_Sample_Customer_Support_Training_Dataset_27K_responses-v11.csv  # Training dataset
+├── 📁 json/                           # Directory for JSON configuration files
+│   └── 📄 intents_responses.json      # JSON file containing intent-response mappings
+├── 📁 model/                          # Directory for machine learning models
+│   ├── 📄 intent_model.pkl            # Trained machine learning model for intent classification
+│   └── 📄 Customer-Service Intent classifier.ipynb  # Jupyter notebook for model training
+├── 📁 templates/                      # HTML templates directory
+│   ├── 📄 index.html                  # Home page with project information and chatbot access
+│   └── 📄 chatbot.html                # Chatbot interface with conversation UI
 ```
 #### 🚀 Run Locally
 Clone the project
@@ -90,4 +102,13 @@ pip install -r requirements.txt
 ```
 python app.py
 ```
+**License**
 
+[![License](https://img.shields.io/badge/license-MIT-black.svg?labelColor=orange)](#)
+
+<div align="center">
+
+**[⬆ Back to Top](#-Intent-Classification-Chatbot-Flask)**
+
+
+</div>
