@@ -108,7 +108,7 @@ python app.py
 
 <div align="center">
 
-**[⬆ Back to Top](#-Intent-Classification-Chatbot-Flask)**
-
+**[⬆ Back to Top](#intent-classification-chatbot-flask)**
 
 </div>
+
